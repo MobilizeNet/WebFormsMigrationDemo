@@ -54,6 +54,7 @@ namespace WebSite
             services.AddDistributedMemoryCache();
             services.AddSession();
             services.AddAntiforgery(options => options.HeaderName = WebMapHeaders.AntiforgeryToken);
+
             services.AddMvc(options =>
             {
                 options.ModelBinderProviders.Insert(0, new ObservableModelBinderProvider());

@@ -1,0 +1,15 @@
+FROM mcr.microsoft.com/mssql/server:2017-latest
+ENV ACCEPT_EULA=Y
+ENV SA_PASSWORD=Password1$
+ENV MSSQL_TCP_PORT=1433
+EXPOSE 1433
+
+WORKDIR /src
+COPY attach_db.sh /db/
+COPY HiringDb.mdf /db/
+COPY HiringDb_log.ldf /db/
+
+RUN chmod +x /db/attach_db.sh
+RUN (/opt/mssql/bin/sqlservr --accept-eula & ) | grep -q "Service Broker manager has started"
+
+ENTRYPOINT /db/attach_db.sh & /opt/mssql/bin/sqlservr

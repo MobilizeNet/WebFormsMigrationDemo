@@ -24,6 +24,7 @@ namespace WebSite
         /// <param name="args">The arguments.</param>
         public static void Main(string[] args)
         {
+            System.Console.WriteLine("Starting" + System.Configuration.ConfigurationManager.ConnectionStrings["HiringConnectionString"].ToString());
             BuildWebHost(args).Run();
         }
 

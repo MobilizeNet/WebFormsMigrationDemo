@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.101.1/containers/docker-in-docker-compose
+// If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
+{
+	"name": "WebMap For WebForms",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "backend",
+	"workspaceFolder": "/app",
+	
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-dotnettools.csharp",
+		"msjsdiag.debugger-for-chrome",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"ms-azuretools.vscode-docker"
+	],
+	"remote.extensionKind": {
+		"ms-azuretools.vscode-docker": [ "ui" ],
+	},
+	"forwardPorts": [1433, 5000, 5001, 4200],
+	"shutdownAction": "stopCompose",
+	// Uncomment the next line if you want start specific services in your Docker Compose config.
+	//"runServices": [""]
+
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	//"postCreateCommand": "bash .devcontainer/postCreate.sh",
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+}

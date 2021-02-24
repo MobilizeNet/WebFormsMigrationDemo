@@ -16,9 +16,10 @@
         <PackageReference Include="Mobilize.Web.BundleBasic.DTO" Version="6.1.7-rc0021" />
         <PackageReference Include="Mobilize.Weaving.WebMapExtensions.All" Version="7.0.20" />
         <PackageReference Include="Mobilize.Weaving" Version="2.0.1" />
-        <PackageReference Include="Mobilize.Web.BundleBasic.WebForms" Version="0.0.2" />
-        <PackageReference Include="Mobilize.Web.BundleBasic.WebForms.DTO" Version="0.0.2" />
+        <PackageReference Include="Mobilize.Web.BundleBasic.WebForms" Version="0.0.3" />
+        <PackageReference Include="Mobilize.Web.BundleBasic.WebForms.DTO" Version="0.0.3" />
         <PackageReference Include="Mobilize.WebMap.CoreServices.All" Version="7.0.20-acs" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
     </ItemGroup>
     <ItemGroup>
 	   <Compile Remove="..\Stubs\**" />
@@ -35,6 +36,15 @@
 	   <None Remove="..\Stubs\**" />
 	   <None Remove="App_Start\**" />
 	   <None Remove="hiringtrackingsite-angular\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Remove="App.config" />
+    </ItemGroup>
+    <ItemGroup Condition=" '$(DEVCONTAINER)' == '' ">
+      <Content Include="App.config" />
+    </ItemGroup>
+     <ItemGroup Condition=" '$(DEVCONTAINER)' != '' ">
+      <Content Include="../.devcontainer/App.config" />
     </ItemGroup>
 </Project>
 

@@ -47,4 +47,27 @@ npm install
 npm run build
 ```
 
+## [Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
+
+Working with Containers is everyday more common. 
+VS Code provides amazing support for working with containers. In this repository we provide a `.devcontainer` folder with a `docker-compose.yml` setup to run this app.
+
+The compose will start:
+* a container for working with your backend code.
+* a container for starting your angular frontend in development mode so you can try your changes right away.
+* a container for the SQL Database so you dont have to worry on how to set it up.
+
+In you have the [Remote Containers extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) vscode will recognize it and ask you to open your solution using this configuration.
+
+![VSCode using DevContainers](./Docs/AppInDevContainers.png)
+
+If everything works you should see your 3 containers:
+
+![Containers](./Docs/Containers.png)
+
+To start playing with your app open a terminal and start your backend:
+
+![Terminal](./Docs/DevContainer_StartInTerminal.png)
+
+
 

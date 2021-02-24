@@ -5,4 +5,4 @@
 # npm start
 
 npm ci
-npm start
+npm run start:dev${DEVCONTAINER}
