@@ -1,0 +1,7 @@
+{
+    "/": {
+      "target": "http://webmap_webform_backend.dev:5000",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
