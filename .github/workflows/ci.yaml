@@ -1,4 +1,4 @@
-name: dotnet package
+name: build
 
 on: [push]
 
@@ -13,10 +13,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core SDK ${{ matrix.dotnet }}
-      uses: actions/setup-dotnet@v1.6.0
+      uses: actions/setup-dotnet@v1.7.2
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
     - name: Install dependencies
       run: dotnet restore
+      working-directory: Target
     - name: Build
       run: dotnet build --configuration Release --no-restore
+      working-directory: Target

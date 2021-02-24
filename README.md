@@ -1,4 +1,4 @@
-# WebMap for WebForms Demo
+# WebMap for WebForms Demo ![status](https://github.com/MobilizeNet/WebFormsMigrationDemo/actions/workflows/ci.yaml/badge.svg)
 
 This repository contains an small demo of a ASP.NET WebForms application that has been 
 upgraded to a ASP.NET Core Backend + Angular FrontEnd.
