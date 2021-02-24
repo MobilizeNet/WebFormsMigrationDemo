@@ -1,0 +1,43 @@
+<wm-usercontrol [model]="model">
+    <div *ngIf="model && model.Visible" class="HiringTrackingSite_PositionDetailsForm">
+        <div ID="Content1" ContentPlaceHolderID="MainContent">
+            <span class="formLabel">Id:</span>
+                    <wm-label ID="IdLabel1" [model]="model.IdLabel1"></wm-label>
+            <br />
+            <span class="formLabel">Name:</span>
+                    <wm-textbox ID="NameTextBox" [model]="model.NameTextBox"></wm-textbox>
+            <br />
+            <span class="formLabel">Description:</span>
+                    <wm-textbox TextMode="MultiLine" ID="DescriptionTextBox" [model]="model.DescriptionTextBox" Rows="6" Width="500">
+                    </wm-textbox>
+            <br />
+            <span class="formLabel">Start Date:</span>
+                    <wm-textbox ID="StartDateTextBox" [model]="model.StartDateTextBox" TextMode="Date">
+                    </wm-textbox>
+            <br />
+            <span class="formLabel">Deadline:</span>
+                    <wm-textbox ID="DeadlineTextBox" [model]="model.DeadlineTextBox" TextMode="Date">
+                    </wm-textbox>
+            <br />
+            <span class="formLabel">Hired?:</span>
+                    <wm-checkbox ID="HiredCheckbox" [model]="model.HiredCheckbox" >
+                    </wm-checkbox>
+            <br /> 
+            <span class="formLabel">Client:</span>
+                    <wm-combobox ID="ClientCombo" [model]="model.ClientCombo"></wm-combobox>
+            <br />
+            <span class="formLabel">Client Contact Name:</span>
+                    <wm-textbox ID="ClientContactNameTextBox" [model]="model.ClientContactNameTextBox"></wm-textbox>
+            <br />
+            <span class="formLabel">Phone:</span>
+                    <wm-textbox ID="ClientContactPhoneTextBox" [model]="model.ClientContactPhoneTextBox"></wm-textbox>
+            <br />
+            <span class="formLabel">Email:</span>
+                    <wm-textbox ID="ClientContactEmailTextBox" [model]="model.ClientContactEmailTextBox"></wm-textbox>
+            <br />
+            <wm-link-label ID="UpdateButton" [model]="model.UpdateButton"> </wm-link-label>
+            <wm-link-label ID="InsertButton" [model]="model.InsertButton"> </wm-link-label>
+            
+        </div>
+    </div>
+</wm-usercontrol>

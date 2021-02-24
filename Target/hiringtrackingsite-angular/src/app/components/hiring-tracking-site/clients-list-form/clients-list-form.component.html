@@ -1,0 +1,54 @@
+<wm-usercontrol [model]="model">
+    <div *ngIf="model && model.Visible" class="HiringTrackingSite_ClientsListForm">
+<div ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <br />
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Client Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Website</th>
+            <th>Contact Name</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th><wm-textbox ID="IdFilter" [model]="model.IdFilter" ></wm-textbox></th>
+            <th><wm-textbox ID="NameFilter" [model]="model.NameFilter" ></wm-textbox></th>
+            <th><wm-textbox ID="PhoneFilter" [model]="model.PhoneFilter" ></wm-textbox></th>
+            <th><wm-textbox ID="EmailFilter" [model]="model.EmailFilter" ></wm-textbox></th>
+            <th><wm-textbox ID="WebsiteFilter" [model]="model.WebsiteFilter" ></wm-textbox></th>
+            <th><wm-textbox ID="ContactNameFilter" [model]="model.ContactNameFilter" ></wm-textbox></th>
+            <th><wm-button  ID="btnFilter" [model]="model.btnFilter" class="btn btn-default"></wm-button></th>
+        </tr>
+        <tr *ngFor="let item of model.DataList1.items">
+            
+                <td>
+                    <span ID="IdLabel">{{item.Id}}</span>
+                </td> 
+                <td>
+                    <span ID="NameLabel" >{{item.Name}}</span>
+                </td>
+                <td>
+                    <span ID="PhoneLabel">{{item.Phone}}</span>
+                </td>
+                <td>
+                    <span ID="EmailLabel">{{item.Email}}</span>
+                </td>
+                <td>
+                    <span ID="WebsiteLabel">{{item.WebSite}}</span>
+                </td>
+                <td>
+                    <span ID="ContactNameLabel">{{item.ContactName}}</span>
+                </td>
+                <td>
+                    <a (click)="SetCommandArgumentAndClick(item.Id)">Details</a>
+                </td>
+
+        </tr>
+      
+    </table>
+    <wm-link-label ID="AddNewButton"  [model]="model.AddNewButton">Add new client</wm-link-label>
+</div>
+    </div>
+</wm-usercontrol>

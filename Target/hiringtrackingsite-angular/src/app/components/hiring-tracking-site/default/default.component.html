@@ -1,0 +1,42 @@
+<wm-usercontrol [model]="model">
+    <div *ngIf="model && model.Visible" class="HiringTrackingSite_Default">
+    <div ID="BodyContent" ContentPlaceHolderID="MainContent">
+
+        <div class="jumbotron">
+            <h1>Hiring Tracking</h1>
+            <p class="lead">Track positions and candidates.</p>
+        </div>
+
+        <div class="row">
+            <!-- <div class="col-md-4">
+                <h2>Candidates</h2>
+                <p>
+                    All existing candidates with their resumes. View and edit their information or associate with open positions.
+                </p>
+                <p>
+                    <a class="btn btn-default" href="Candidates.aspx">View</a>
+                </p>
+            </div> -->
+            <div class="col-md-4">
+                <h2>Positions</h2>
+                <p>
+                    View open positions or query previous hires.
+                </p>
+                <p>
+                    <wm-button class="btn btn-default" [model]="model.PosititionList"></wm-button>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Clients</h2>
+                <p>
+                    Manage contacts requesting the positions.
+                </p>
+                <p>
+                    <wm-button class="btn btn-default" [model]="model.ClientList"></wm-button>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</wm-usercontrol>

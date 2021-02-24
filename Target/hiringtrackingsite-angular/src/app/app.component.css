@@ -1,0 +1,25 @@
+#mybutton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+
+#formNavigator {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: lightskyblue;
+    width: 90%
+  }
+
+#mobilize-logo {
+  position: fixed;
+  top: 2px;
+  float: right;
+  right: 3px;
+}
+
+/deep/ .mat-toolbar.mat-primary {
+  background: #00adee !important;
+  color: #fff;
+}

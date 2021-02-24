@@ -1,0 +1,65 @@
+<wm-usercontrol [model]="model">
+    <div *ngIf="model && model.Visible" class="HiringTrackingSite_PositionsList">
+        <div ID="Content1" ContentPlaceHolderID="MainContent" >
+            <br />
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>Deadline</th>
+                    <th>Position Closed</th>
+                    <th>Client Contact</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><wm-textbox ID="IdFilter" [model]="model.IdFilter"></wm-textbox></th>
+                    <th><wm-textbox ID="NameFilter" [model]="model.NameFilter"></wm-textbox></th>
+                    <th><wm-textbox ID="DescriptionFilter" [model]="model.DescriptionFilter"></wm-textbox></th>
+                    <th><wm-textbox ID="StartDateFilter" [model]="model.StartDateFilter"></wm-textbox></th>
+                    <th><wm-textbox ID="DeadlineFilter" [model]="model.DeadlineFilter"></wm-textbox></th>
+                    <th></th>
+                    <th><wm-textbox ID="ClientContactFilter" [model]="model.ClientContactFilter"></wm-textbox></th>
+                    <th><wm-button  ID="btnFilter" [model]="model.btnFilter" class="btn btn-default"> </wm-button></th>
+                </tr>
+                <tr *ngFor="let item of model.DataList1.items">
+                    <td>
+                        <span ID="IdLabel"> {{item.Id}} </span>
+                    </td>
+                    <td>
+                        <span ID="NameLabel">{{item.Name}}</span>
+                    </td>
+                    <td>
+                        <span ID="PhoneLabel" >{{item.Description}}</span>
+                    </td>
+                    <td>
+                        <span ID="EmailLabel" >{{item.StartDate}}</span>
+                    </td>
+                    <td>
+                        <span ID="WebsiteLabel">{{item.Deadline}}</span>
+                    </td>
+                    <td>
+                        <span ID="ContactNameLabel">{{item.Hired}}</span>
+                    </td>
+                    <td>
+                        <span ID="Label1" >{{item.ClientName}}  {{item.ClientContactName}}  </span>
+                    </td>
+                    <td> 
+                        <a href="#" (click)="SetCommandArgumentAndClick(item.Id)">Details</a>
+                    </td>
+        
+                </tr>
+                <!-- <asp:DataList ID="DataList1" [model]="model.DataList1" DataKeyField="Id" DataSourceID="PositionsDataSource" RepeatLayout="Flow">
+                    <ItemTemplate>
+                        <tr>
+                        </tr>
+                    </ItemTemplate>
+                </asp:DataList> -->
+        
+            </table>
+            <wm-link-label ID="AddNewButton" OnClick="AddNewButton_Click" [model]="model.AddNewButton">Add new position</wm-link-label>
+
+        </div>
+    </div>
+</wm-usercontrol>

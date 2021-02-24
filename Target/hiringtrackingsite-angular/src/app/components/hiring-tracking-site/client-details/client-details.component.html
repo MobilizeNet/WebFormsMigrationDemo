@@ -1,0 +1,27 @@
+<wm-usercontrol [model]="model">
+    <div *ngIf="model && model.Visible" class="HiringTrackingSite_ClientDetails">
+        <div ID="Content1" ContentPlaceHolderID="MainContent">
+            <span class="formLabel">Id:</span>
+            <wm-label ID="IdLabel1" [model]="model.IdLabel1"></wm-label>
+            <br />
+            <span class="formLabel">Name:</span>
+            <wm-textbox ID="NameTextBox" [model]="model.NameTextBox"></wm-textbox>
+            <br />
+            <span class="formLabel">Phone:</span>
+            <wm-textbox ID="PhoneTextBox" [model]="model.PhoneTextBox"></wm-textbox>
+            <br />
+            <span class="formLabel">Email:</span>
+            <wm-textbox ID="EmailTextBox" [model]="model.EmailTextBox"></wm-textbox>
+            <br />
+            <span class="formLabel">Contact Name:</span>
+            <wm-textbox ID="ContactNameTextBox" [model]="model.ContactNameTextBox"></wm-textbox>
+            <br />
+            <span class="formLabel">Website:</span>
+                    <wm-textbox ID="WebsiteTextBox" [model]="model.WebsiteTextBox"></wm-textbox>
+            <br />
+            <wm-link-label ID="UpdateButton" [model]="model.UpdateButton"></wm-link-label>
+            <wm-link-label ID="InsertButton" [model]="model.InsertButton"></wm-link-label>
+
+        </div>
+    </div>
+</wm-usercontrol>

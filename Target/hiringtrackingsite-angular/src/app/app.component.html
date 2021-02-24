@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!-- <title><%: Page.Title %> - Hiring Tracker</title> -->
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <div>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" (click)="NavHome()">Hiring Tracker</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" (click)="NavHome()">Home</a></li>
+                        <li><a href="#" (click)="NavClientList()">Clients</a></li>
+                        <li><a href="#" (click)="NavPositionList()">Positions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <div>
+                <div>
+                    <wm-formscontainer></wm-formscontainer>
+                    <wm-loading></wm-loading>
+                </div>
+            </div>            
+            <hr />
+            <footer>
+                <p>&copy; {{ year }} - Hiring Tracker</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+body{
+    background-color: lightgrey;
+}
+
+wm-textbox > div {
+    display: inherit !important;
+}
+
+wm-combobox > div {
+    display: inherit !important;
+}
+
+wm-label > div {
+    display: inherit !important;
+}
+
+wm-label > div > div { 
+    display: inherit !important;
+}
+
+wm-checkbox > div  { 
+    display: inherit !important;
+}

@@ -1,0 +1,4 @@
+**/*.spec.ts
+mockService.ts
+test.ts
+*.html
