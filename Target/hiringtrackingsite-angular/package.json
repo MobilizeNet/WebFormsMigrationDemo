@@ -4,8 +4,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "ng": "ng",
-    "start:dev": "ng serve --host 0.0.0.0 --proxy-config=proxy.conf.json",
-    "start:devcontainer": "ng serve --host 0.0.0.0 --proxy-config=dev.proxy.conf.json",
+    "start:dev": "ng serve --host 0.0.0.0 --proxy-config=proxy.conf.json --disableHostCheck true",
+    "start:devcontainer": "ng serve --host 0.0.0.0 --proxy-config=dev.proxy.conf.json --disableHostCheck true",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
