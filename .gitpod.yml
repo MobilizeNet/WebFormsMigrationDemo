@@ -1,2 +1,8 @@
+
 tasks:
   - init: sudo docker-up
+  - command: docker-compose up
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
