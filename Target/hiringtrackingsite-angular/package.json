@@ -13,7 +13,7 @@
   },
   "private": true,
   "dependencies": {
-    "@mobilize/winforms-components": "7.0.1-rc0008",
+    "@mobilize/winforms-components": "7.0.2",
     "@angular/core": "~11.0.9",
     "@angular/compiler": "~11.0.9",
     "@angular/common": "~11.0.9",
