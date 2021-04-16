@@ -71,14 +71,8 @@ To start playing with your app open a terminal and start your backend:
 
 Do you want to run it in the cloud. You can follow these steps:
 
-[Open the workspace in Gitpod](http://gitpod.io#https://github.com/MobilizeNet/WebFormsMigrationDemo)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/MobilizeNet/WebFormsMigrationDemo)
 
-Run these commands:
+Give it 5-10 mins for all the containers to load.
 
-* open a terminal and run `sudo docker-up`
-* from another terminal `cd .devcontainers` and then `docker-compose up`
-* wait for everything to start
-* then do: `docker ps`
-* docker exec -it <backend-container-id> /bin/bash
-* once inside do `cd Target` and `dotnet run`
-
+After that you can just follow the same steps described above for containers.
