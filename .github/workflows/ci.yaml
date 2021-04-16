@@ -9,9 +9,26 @@ jobs:
     strategy:
       matrix:
         dotnet-version: ['3.1.x' ]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
+    - name: FrontEnd Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Node ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install and npm run build
+      run: |
+        cd ./Target/hiringtrackingsite-angular
+        npm i
+        npm run build  
     - name: Setup .NET Core SDK ${{ matrix.dotnet }}
       uses: actions/setup-dotnet@v1.7.2
       with:
