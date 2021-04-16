@@ -1,7 +1,7 @@
 
 tasks:
   - init: sudo docker-up
-  - command: cd .devcontainer && docker-compose up
+  - command: sleep 10 && cd .devcontainer && docker-compose up
 
 vscode:
   extensions:
