@@ -50,7 +50,7 @@ npm run build
 ## [Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
 
 Working with Containers is everyday more common. 
-VS Code provides amazing support for working with containers. In this repository we provide a `.devcontainer` folder with a `docker-compose.yml` setup to run this app.
+VS Code provides amazing support for working with containers. In this repository we provide a `.devcontainer` folder with a `docker-compose.yml` setup to run this app. Remember to install Docker first and start the Docker desktop app.
 
 The compose will start:
 * a container for working with your backend code.
