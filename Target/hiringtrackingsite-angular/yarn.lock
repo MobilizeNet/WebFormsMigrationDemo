@@ -1232,24 +1232,24 @@
     node-fetch "^2.6.0"
     ws "^6.0.0"
 
-"@mobilize/angularclient@7.0.1-rc0001":
-  version "7.0.1-rc0001"
-  resolved "http://ais-build-w7:81/npm/Frontend/@mobilize/angularclient/-/angularclient-7.0.1-rc0001.tgz#87441d1f3b07c96d4c22cc3af466a5b20f962fdf"
-  integrity sha1-h0QdHzsHyW1MIsw69Galsg+WL98=
+"@mobilize/angularclient@7.0.1":
+  version "7.0.1"
+  resolved "https://packages.mobilize.net/npm/mobilizenet-npm/@mobilize/angularclient/-/angularclient-7.0.1.tgz#b48fac10888995b02887a6e53ace1b09317e45da"
+  integrity sha512-LsOhVSIPvlNXI4QUA6y6kMGaKNoidl2/RjW1xJAGgwcpaYnBIlKTGPoYPpbX84M4MAcJPm04kXxIBwRAtmWnWQ==
   dependencies:
-    "@mobilize/webmap-core" "7.0.0"
+    "@mobilize/webmap-core" "7.0.1"
     codelyzer "^6.0.1"
     core-js "3.6.4"
     rxjs "6.5.5"
     tslib "^2.0.0"
     zone.js "~0.10.2"
 
-"@mobilize/base-components@7.0.1-rc0002":
-  version "7.0.1-rc0002"
-  resolved "http://ais-build-w7:81/npm/Frontend/@mobilize/base-components/-/base-components-7.0.1-rc0002.tgz#e3bd85774b8920a7814022958b11b69856ba9720"
-  integrity sha1-472Fd0uJIKeBQCKVixG2mFa6lyA=
+"@mobilize/base-components@7.0.1":
+  version "7.0.1"
+  resolved "https://packages.mobilize.net/npm/mobilizenet-npm/@mobilize/base-components/-/base-components-7.0.1.tgz#435d0d4166a6dd937fa38c2cdbdcc6b53f7d0acf"
+  integrity sha512-JRc5uOqO+Dzb9Lm9zewfSxveFK0lbyp6tpgQMdhOpB0uVIYzysVsR14jV6uY8FVuhnhrVa0DwDyuJJDyCKkLqA==
   dependencies:
-    "@mobilize/angularclient" "7.0.1-rc0001"
+    "@mobilize/angularclient" "7.0.1"
     core-js "3.6.4"
     ngx-toastr "^12.0.0"
     rxjs "~6.5.4"
@@ -1265,23 +1265,23 @@
     i18next "^19.3.2"
     loglevel "^1.6.7"
 
-"@mobilize/webmap-core@7.0.0":
-  version "7.0.0"
-  resolved "http://ais-build-w7:81/npm/Frontend/@mobilize/webmap-core/-/webmap-core-7.0.0.tgz#ef09ff550d876e2b8bb292ce58db033bee162e67"
-  integrity sha1-7wn/VQ2HbiuLspLOWNsDO+4WLmc=
+"@mobilize/webmap-core@7.0.1":
+  version "7.0.1"
+  resolved "https://packages.mobilize.net/npm/mobilizenet-npm/@mobilize/webmap-core/-/webmap-core-7.0.1.tgz#3c69606d177cd0204eeba9d0ab5361df80446ac4"
+  integrity sha512-9Alm3J9cRnLpkN4eqsPUw3FQyg1OU04KxaMzLQQcK07q6KAWfLyapt32HGOkzgXhO7GHoQuDsgdP13kF4MO+7Q==
   dependencies:
     "@mobilize/logging" "6.1.3"
     i18next "^19.3.2"
     jquery "^3.4.1"
     loglevel "^1.6.7"
 
-"@mobilize/winforms-components@7.0.1-rc0008":
-  version "7.0.1-rc0008"
-  resolved "http://ais-build-w7:81/npm/Frontend/@mobilize/winforms-components/-/winforms-components-7.0.1-rc0008.tgz#8261ed004b432cc4705c95bdb2e3c93f7c2e041b"
-  integrity sha1-gmHtAEtDLMRwXJW9suPJP3wuBBs=
+"@mobilize/winforms-components@7.0.2":
+  version "7.0.2"
+  resolved "https://packages.mobilize.net/npm/mobilizenet-npm/@mobilize/winforms-components/-/winforms-components-7.0.2.tgz#f8bc1d4a412f94af4c7d1e8693ffc666db02a104"
+  integrity sha1-+LwdSkEvlK9MfR6Gk//GZtsCoQQ=
   dependencies:
     "@microsoft/signalr" "^5.0.2"
-    "@mobilize/base-components" "7.0.1-rc0002"
+    "@mobilize/base-components" "7.0.1"
     "@progress/kendo-angular-buttons" "~6.0.0"
     "@progress/kendo-angular-common" "~2.0.0"
     "@progress/kendo-angular-dateinputs" "~5.0.0"
@@ -6946,9 +6946,11 @@ nice-try@^1.0.4:
   integrity sha1-ozeKdpbOfSI+iPybdkvX7xCJ42Y=
 
 node-fetch@^2.6.0:
-  version "2.6.1"
-  resolved "http://ais-build-w7:81/npm/Frontend/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
-  integrity sha1-BFvTI2Mfdu0uK1VXM5RBa2OaAFI=
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  dependencies:
+    whatwg-url "^5.0.0"
 
 node-forge@^0.10.0:
   version "0.10.0"
@@ -9686,6 +9688,11 @@ tough-cookie@^2.3.3, tough-cookie@~2.5.0:
     psl "^1.1.28"
     punycode "^2.1.1"
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+
 tree-kill@1.2.2:
   version "1.2.2"
   resolved "http://ais-build-w7:81/npm/Frontend/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
@@ -10135,6 +10142,11 @@ webdriver-manager@^12.1.7:
     semver "^5.3.0"
     xml2js "^0.4.17"
 
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
+
 webpack-dev-middleware@3.7.2:
   version "3.7.2"
   resolved "http://ais-build-w7:81/npm/Frontend/webpack-dev-middleware/-/webpack-dev-middleware-3.7.2.tgz#0019c3db716e3fa5cecbf64f2ab88a74bab331f3"
@@ -10289,6 +10301,14 @@ whatwg-mimetype@^2.3.0:
   version "2.3.0"
   resolved "http://ais-build-w7:81/npm/Frontend/whatwg-mimetype/-/whatwg-mimetype-2.3.0.tgz#3d4b1e0312d2079879f826aff18dbeeca5960fbf"
   integrity sha1-PUseAxLSB5h5+Cav8Y2+7KWWD78=
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 which-module@^2.0.0:
   version "2.0.0"
